@@ -1,0 +1,12 @@
+<ul class="list-group list-group-flush">
+  <li  *ngFor="let todo of todos" class="list-group-item">
+    <div class="card mt-2">
+      <h5 class="card-header" name="title">{{todo.title}}</h5>
+      <div class="card-body">
+        <textarea style="height:100px" [(ngModel)]="todo.description" class="form-control mt-2" aria-label="Description" name="description" required ngModel></textarea>
+        <a  (click)="deleteTodo(todo.title)" class="btn btn-primary mt-2">Delete</a>
+        <a  name="description" (click)="updateTodo(todo.title,todo.description)" class="btn btn-primary mt-2 ms-2">Update</a>
+      </div>
+    </div>
+  </li>
+</ul>

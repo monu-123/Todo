@@ -1,0 +1,24 @@
+
+<div style="height: 50px; ;">
+</div>
+<div class="container">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" aria-current="page" routerLink="/">Current Todos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/addTodo">Add Todo</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link"routerLinkActive="active" routerLink="/deleteTodo">Delete Todo</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link"routerLinkActive="active" routerLink="/aboutTodo">About</a>
+      </li>
+    </ul>
+</nav>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,16 @@
+<div style="height:20px"></div>
+  <div style="width:500px" class="container">
+    <form #form="ngForm" (ngSubmit)="addTodo(form.value)">
+        <h1> Add Todo</h1>
+        <div name="title_div" class="input-group mb-3 form-group">
+          <input type="text" class="form-control" placeholder="Title" aria-label="Title" name="title" aria-describedby="basic-addon1" required ngModel>
+        </div>
+        <div class="input-group form-group">
+          <textarea style="height:100px" class="form-control" aria-label="Description" name="description" placeholder="Description" required ngModel></textarea>
+        </div>
+        <div  class="d-grid mt-2 gap-2 d-md-flex justify-content-md-end">
+          <button class="btn btn-primary me-md-2" type="button" name="reset" (click)="(reset(form))">Discard</button>
+          <button class="btn btn-primary" name="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

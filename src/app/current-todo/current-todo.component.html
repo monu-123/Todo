@@ -1,0 +1,10 @@
+<ul class="list-group list-group-flush">
+  <li  *ngFor="let todo of todos" class="list-group-item">
+    <div style="width:800px" class="card mt-2">
+      <h5 class="card-header" name="title">{{todo.title}}</h5>
+      <div class="card-body">
+        <p class="card-text" name="description">{{todo.description}}</p>
+      </div>
+    </div>
+  </li>
+</ul>
